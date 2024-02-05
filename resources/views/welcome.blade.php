@@ -16,7 +16,7 @@
     <script src="{{ asset('js/bootstrap.bundle.js') }}"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     {{-- <script async
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAe-3hs_UvSzw68By3DFkObD8v_MwgG7R4&loading=async&region=JP&language=ar&callback=initMap">
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCuDa9tqacEi5u-Ct9iLcnNqaQXIPz3cn4&loading=async&region=JP&language=ar&callback=initMap">
 </script> --}}
     <script src="{{ asset('leaflet/mapLeaflet.js') }}"></script>
     <script async src="{{ asset('leaflet/mapsGoogleapis.js') }}"></script>

@@ -1,4 +1,4 @@
-<div>
+@extends('welcome')
 
 @section('content')
 
@@ -20,7 +20,8 @@
             </div>
             <div class="modal-body">
                 <div class="container-sm">
-                    <form wire:submit.prevent="store">
+                    <form action="{{ route('createMap') }}" method="POST">
+                        @csrf
                         <div class=" mb-3 col-md-6 ">
                             <label class="form-label" for="name">خط الطول </label>
                             <input type="text" id="name" required="" value="{{ old('name') }}"
@@ -41,13 +42,13 @@
                 
                         <div class=" mb-3 col-md-6 ">
                             <label class="form-label" for="latitude">خط الطول </label>
-                            <input type="text" id="latitude" required="" value="{{ old('latitude') }}"
+                            <input type="text" id="latitude" readonly="true" required="" value="{{ old('latitude') }}"
                                 name="latitude" class="form-control">
                         </div>
                 
                         <div class=" mb-3 col-md-6 ">
                             <label class="form-label" for="longitude">خط العرض </label>
-                            <input type="text" id="longitude" required="" value="{{ old('longitude') }}"
+                            <input type="text" id="longitude" readonly="true" required="" value="{{ old('longitude') }}"
                                 name="longitude" class="form-control">
                         </div>
                         <button type="submit" class="btn btn-primary">Submit</button>
@@ -60,7 +61,7 @@
 </div>
     
 @endsection
-</div>
+
 {{-- <!doctype html>
 <html lang="en">
   <head>
